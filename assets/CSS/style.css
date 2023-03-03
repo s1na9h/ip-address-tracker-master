@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+body {
+  font-family: "Rubik";
+}
+
+#map {
+  height: calc(100vh - 200px);
+  background-color: blue;
+  z-index: -1;
+}
+
+input {
+  padding-left: 1.2rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: 0;
+  outline: 0;
+  height: 2.4rem;
+  width: calc(100% - 38.4px);
+  max-width: 25rem;
+}
+
+input::-moz-placeholder {
+  font-size: 12px;
+}
+
+input::placeholder {
+  font-size: 12px;
+}
+
+button {
+  width: 2.4rem;
+  margin-left: -6px;
+  border: 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: hsl(0, 0%, 17%);
+  color: white;
+  height: 2.4rem;
+}
+
+form {
+  text-align: center;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.header {
+  background-image: url(../images/pattern-bg-desktop.png);
+  background-size: cover;
+  height: 200px;
+}
+
+.information-section h5 {
+  margin-bottom: 0;
+}
+
+.information {
+  max-width: 1100px;
+  margin-inline: auto;
+  border-radius: 1rem;
+  transform: translateY(20px);
+}
+.information div h6 {
+  color: hsl(0, 0%, 59%);
+  font-size: 12px;
+}
+
+@media (max-width: 767.98px) {
+  .ip-address, .location {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 576.98px) {
+  .ip-address, .location, .timezone {
+    margin-bottom: 1rem;
+  }
+  .information {
+    text-align: center;
+  }
+}
+@media (min-width: 575.98px) {
+  .information {
+    transform: translateY(20px);
+  }
+}
+@media (min-width: 767.98px) {
+  .information {
+    transform: translateY(50%);
+  }
+}/*# sourceMappingURL=style.css.map */
